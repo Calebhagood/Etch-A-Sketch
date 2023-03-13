@@ -11,6 +11,7 @@
 <body>
     <div class="flex-container">
         <div class="title"><h1>Etch-A-Sketch</h1></div>
+        <div class="mode">Mode: Drawing</div>
         <div class="content">
             <div class="grid"></div>
             <div class="buttons">
@@ -24,6 +25,9 @@
             <div>
                 <input type="text" value="16" placeholder="Grid Size" onchange="changeSize(this.value)">
                 <button>Set Size</button>
+            </div>
+            <div class="error" style="display:none">
+                Grid size must be between 2 and 100
             </div>
         </div>
     </div>
